@@ -1,0 +1,18 @@
+<%- include("../layouts/main-top.js") %>
+
+
+<div>
+    <form action="/comment/add" method="POST">
+        <div class="form-item">
+            <label for="text">Text</label>
+            <input type="text" name="text"/>
+            <input type="hidden" value="<%= articleId %>" name="articleId">
+        </div>
+        <div class="form-item">
+            <button type="submit">Create</button>
+        </div>
+    </form>
+</div>
+
+
+<%- include("../layouts/main-bottom.js") %>
